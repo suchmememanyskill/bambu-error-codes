@@ -18,6 +18,7 @@ jobs:
       - name: Build static files
         id: build
         run: |
+          cd ..
           ls -la
           python3 generate.py
 
