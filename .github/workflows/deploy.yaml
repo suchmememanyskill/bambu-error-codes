@@ -17,7 +17,9 @@ jobs:
 
       - name: Build static files
         id: build
-        run: python3 generate.py    
+        run: |
+          ls -la
+          python3 generate.py
 
       - name: Upload static files as artifact
         id: deployment
