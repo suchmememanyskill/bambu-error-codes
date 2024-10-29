@@ -1,3 +1,12 @@
+name: Page Deploy
+
+permissions:
+    pages: write
+    id-token: write
+
+on:
+  push:
+
 jobs:
   build:
     runs-on: ubuntu-latest
